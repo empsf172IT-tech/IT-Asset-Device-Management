@@ -171,14 +171,16 @@
             background-color: rgba(167, 139, 250, 0.1);
         }
         /* Mobile active link */
-        .mobile-nav-link-active {
+        #mobile-menu a.mobile-nav-link-active {
             color: #8b5cf6 !important;
-            background-color: rgba(139, 92, 246, 0.08) !important;
+            background-color: rgba(139, 92, 246, 0.1) !important;
             font-weight: 600;
+            border-left: 3px solid #8b5cf6;
         }
-        .dark .mobile-nav-link-active {
+        .dark #mobile-menu a.mobile-nav-link-active {
             color: #a78bfa !important;
-            background-color: rgba(167, 139, 250, 0.12) !important;
+            background-color: rgba(167, 139, 250, 0.14) !important;
+            border-left: 3px solid #a78bfa;
         }
 
         /* RTL Specifics */
@@ -944,7 +946,7 @@
             const sectionIds = ['platform', 'capabilities', 'intelligence', 'operations', 'security', 'contact'];
 
             // Desktop nav links (href="#id" or href="#")
-            const desktopLinks = document.querySelectorAll('nav > div > div > div.hidden.md\\:flex a[href^="#"]');
+            const desktopLinks = document.querySelectorAll('nav > div > div > div.hidden.lg\\:flex a[href^="#"]');
             // Mobile nav links
             const mobileNavLinks = document.querySelectorAll('#mobile-menu a[href^="#"]');
 
